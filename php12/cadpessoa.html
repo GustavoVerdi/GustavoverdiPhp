@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoa</title>
+</head>
+<body>
+    <h4>Preencha os dados da pessoa e clique em "Salvar".</h4>
+
+    <form action="/bd/cadastrar_pessoa.php" method="post">
+        <fieldset>
+            <legend>Dados da Pessoa:</legend>
+            <table>
+                <tr>
+                    <td><label for="nome">Primeiro Nome:</label></td>
+                    <td><input type="text" id="nome" name="nome" maxlength="150"></td>
+                </tr>
+                <tr>
+                    <td><label for="sobrenome">Sobrenome:</label></td>
+                    <td><input type="text" id="sobrenome" name="sobrenome" maxlength="150"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-Mail:</label></td>
+                    <td><input type="email" id="email" name="email" maxlength="150"></td>
+                </tr>
+                <tr>
+                    <td><label for="cidade">Cidade:</label></td>
+                    <td><input type="text" id="cidade" name="cidade" maxlength="150"></td>
+                </tr>
+                <tr>
+                    <td><label for="estado">Estado:</label></td>
+                    <td>
+                        <select name="estado">
+                            <option value="SC">Santa Catarina</option>
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" maxlength="15"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left">
+                        <br>
+                        <input type="submit" value="Salvar">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
